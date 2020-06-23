@@ -8,7 +8,6 @@ def encode(inString):
     for char in inString:
         try:
             index = alpha.index(char)
-            valid_char = alpha[index]
         except ValueError:
             outString.append(char)
             continue
