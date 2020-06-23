@@ -4,6 +4,7 @@ magic_number = 7
 alpha = [chr(i) for i in range(low_ascii, high_ascii+1)]
 
 def encode(inString):
+    inString = inString.upper()
     outString = []
     for char in inString:
         try:
